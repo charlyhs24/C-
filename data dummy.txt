@@ -1,0 +1,52 @@
+=============||||STUDENT|||============
+    list_student L;
+    address_student P,q,r;
+    Student_s x,y,z;
+    x.nim = 1301150023;
+    x.nama = "charly haholongan situmorang";
+    x.kelas = "IF41";
+    x.jurusan = "teknik informatika";
+    x.angkatan = "2015";
+
+    y.nim = 1301150023;
+    y.nama = "charly haholongan situmorang";
+    y.kelas = "IF40";
+    y.jurusan = "teknik informatika";
+    y.angkatan = "2014";
+
+    z.nim = 1301150023;
+    z.nama = "charly haholongan situmorang";
+    z.kelas = "IF39";
+    z.jurusan = "teknik informatika";
+    z.angkatan = "2013";
+    createlist_student(L);
+    insert_student(L,alokasi_student(x));
+    insert_student(L,alokasi_student(y));
+    insert_student(L,alokasi_student(z));
+    printinfo_student(L);
+
+========|||MATAKULIAH|||==========
+    list_matakuliah L;
+    address_matakuliah p,q,r;
+    matakuliah x,y,z;
+
+    x.id_matkul = "CSH123";
+    x.nama_matkul = "Machine Learning";
+    x.jumlah_sks = 3;
+
+    y.id_matkul = "CSH101";
+    y.nama_matkul = "STRUKTUR DATA";
+    y.jumlah_sks = 4;
+
+    z.id_matkul  = "CSH111";
+    z.nama_matkul = "SISTEM INFORMASI";
+    z.jumlah_sks = 3;
+    createlist_matakuliah(L);
+    p = alokasi_matakuliah(x);
+    q = alokasi_matakuliah(y);
+    r = alokasi_matakuliah(z);
+
+    insertlast_matakuliah(L,p);
+    insertlast_matakuliah(L,q);
+    insertlast_matakuliah(L,r);
+    printinfo_matakuliah(L);

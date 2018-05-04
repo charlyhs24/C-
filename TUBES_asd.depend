@@ -1,0 +1,40 @@
+# depslib dependency file v1.0
+1525286891 source:d:\github\tugas besar\tubes_asd\main.cpp
+	"student.h"
+	"menu.h"
+	"matkul.h"
+
+1522082804 d:\github\tugas besar\tubes_asd\matakuliah.h
+	<iostream>
+
+1525285662 d:\github\tugas besar\tubes_asd\student.h
+	<iostream>
+	"matkul.h"
+
+1525286401 source:d:\github\tugas besar\tubes_asd\matkul.cpp
+	"matkul.h"
+
+1525286250 d:\github\tugas besar\tubes_asd\matkul.h
+	<cstdlib>
+	<iostream>
+
+1523990489 source:d:\github\tugas besar\tubes_asd\relasi.cpp
+	"relasi.h"
+
+1523990956 d:\github\tugas besar\tubes_asd\relasi.h
+	"matkul.h"
+	"student.h"
+	<iostream>
+
+1525286711 source:d:\github\tugas besar\tubes_asd\student.cpp
+	"student.h"
+
+1523992414 source:d:\github\tugas besar\tubes_asd\menu.cpp
+	"matkul.h"
+
+1523992855 d:\github\tugas besar\tubes_asd\menu.h
+
+1525284386 d:\github\tugas besar\tubes_asd\menu.cpp
+	"matkul.h"
+	"student.h"
+
