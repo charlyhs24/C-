@@ -4,6 +4,8 @@
 	"menu.h"
 	"matkul.h"
 
+1525286250 
+
 1522082804 d:\github\tugas besar\tubes_asd\matakuliah.h
 	<iostream>
 
@@ -29,6 +31,8 @@
 1525286711 source:d:\github\tugas besar\tubes_asd\student.cpp
 	"student.h"
 
+1525284386 "
+
 1523992414 source:d:\github\tugas besar\tubes_asd\menu.cpp
 	"matkul.h"
 
@@ -37,4 +41,46 @@
 1525284386 d:\github\tugas besar\tubes_asd\menu.cpp
 	"matkul.h"
 	"student.h"
+
+1526608313 source:d:\github\tugas besar\c++\matkul.cpp
+	"matkul.h"
+
+1526607904 d:\github\tugas besar\c++\matkul.h
+	<cstdlib>
+	<iostream>
+
+1525289918 source:/media/charlyhsitumorang/DATA/GITHUB/Tugas Besar/C++/main.cpp
+	"student.h"
+	"menu.h"
+	"matkul.h"
+
+1525626354 /media/charlyhsitumorang/DATA/GITHUB/Tugas Besar/C++/student.h
+	<iostream>
+	"matkul.h"
+
+1525286250 /media/charlyhsitumorang/DATA/GITHUB/Tugas Besar/C++/matkul.h
+	<cstdlib>
+	<iostream>
+
+1523992855 /media/charlyhsitumorang/DATA/GITHUB/Tugas Besar/C++/menu.h
+
+1525286401 source:/media/charlyhsitumorang/DATA/GITHUB/Tugas Besar/C++/matkul.cpp
+	"matkul.h"
+
+1525626295 source:/media/charlyhsitumorang/DATA/GITHUB/Tugas Besar/C++/student.cpp
+	"student.h"
+
+1526580542 source:d:\github\tugas besar\c++\student.cpp
+	"student.h"
+	"matkul.h"
+
+1526580535 d:\github\tugas besar\c++\student.h
+	<iostream>
+	"matkul.h"
+
+1526608140 source:d:\github\tugas besar\c++\main.cpp
+	"student.h"
+	"matkul.h"
+
+1523992855 d:\github\tugas besar\c++\menu.h
 

@@ -6,8 +6,8 @@
 #define info(P) (P)->info
 #define next(P) (P)->next
 #define prev(P) (P)->prev
-#define first(L) ((L).first)
-#define last(L) ((L).last)
+#define first(L) L.first
+#define last(L) L.last
 #define Nil NULL
 
 using namespace std;
@@ -32,16 +32,20 @@ struct list_matakuliah{
 void createlist_matakuliah(list_matakuliah &L);
 address_matakuliah alokasi_matakuliah(infotype_matakuliah y);
 
+void dealokasi_matakuliah(address_matakuliah P);
 address_matakuliah find_matkul(list_matakuliah L,string id);
-void insertfirst_matakuliah(list_matakuliah &L, address_matakuliah P);
 
 void insertlast_matakuliah(list_matakuliah &L, address_matakuliah P);
 void deletefirst_matakuliah(list_matakuliah &L, address_matakuliah P);
 
-void deletelast_matakuliah (list_matakuliah &L, address_matakuliah P);
-void deleteafter_matakuliah (list_matakuliah &L, address_matakuliah P);
+
+void deletelast_matakuliah(list_matakuliah &L, address_matakuliah P);
+void output_relasi(address_matakuliah MK);
 
 void printinfo_matakuliah(list_matakuliah L);
+void deleteafter_matakuliah(list_matakuliah &L, address_matakuliah P);
 
+void editData_MataKuliah(list_matakuliah &L, address_matakuliah P, string id_matakuliah, string nama_matakuliah, int jml_sks);
+address_matakuliah find_matkulByname(list_matakuliah L, string nama);
 
 #endif // MATKUL_H_INCLUDED

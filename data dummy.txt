@@ -1,52 +1,93 @@
-=============||||STUDENT|||============
-    list_student L;
-    address_student P,q,r;
-    Student_s x,y,z;
-    x.nim = 1301150023;
-    x.nama = "charly haholongan situmorang";
-    x.kelas = "IF41";
-    x.jurusan = "teknik informatika";
-    x.angkatan = "2015";
+#include "student.h"
+#include "menu.h"
+#include "matkul.h"
+//#include <iostream>
+//
+//using namespace std;
 
-    y.nim = 1301150023;
-    y.nama = "charly haholongan situmorang";
-    y.kelas = "IF40";
-    y.jurusan = "teknik informatika";
-    y.angkatan = "2014";
+int main()
+{
+    int choose;
+    Student_s x;
+    matakuliah m;
+    list_student S;
+    list_matakuliah M;
+    createlist_matakuliah(M);
+    createlist_student(S);
+    matakuliah xx,y,z,zz;
 
-    z.nim = 1301150023;
-    z.nama = "charly haholongan situmorang";
-    z.kelas = "IF39";
-    z.jurusan = "teknik informatika";
-    z.angkatan = "2013";
-    createlist_student(L);
-    insert_student(L,alokasi_student(x));
-    insert_student(L,alokasi_student(y));
-    insert_student(L,alokasi_student(z));
-    printinfo_student(L);
-
-========|||MATAKULIAH|||==========
-    list_matakuliah L;
-    address_matakuliah p,q,r;
-    matakuliah x,y,z;
-
-    x.id_matkul = "CSH123";
-    x.nama_matkul = "Machine Learning";
-    x.jumlah_sks = 3;
+    xx.id_matkul = "CSH123";
+    xx.nama_matkul = "Machine Learning";
+    xx.jumlah_sks = 3;
 
     y.id_matkul = "CSH101";
     y.nama_matkul = "STRUKTUR DATA";
     y.jumlah_sks = 4;
+//
+//    z.id_matkul  = "CSH111";
+//    z.nama_matkul = "SISTEM INFORMASI";
+//    z.jumlah_sks = 3;
+//
+//    zz.id_matkul  = "CSH112";
+//    zz.nama_matkul = "Jaringan Komputer";
+//    zz.jumlah_sks = 4;
 
-    z.id_matkul  = "CSH111";
-    z.nama_matkul = "SISTEM INFORMASI";
-    z.jumlah_sks = 3;
-    createlist_matakuliah(L);
-    p = alokasi_matakuliah(x);
-    q = alokasi_matakuliah(y);
-    r = alokasi_matakuliah(z);
+    insertlast_matakuliah(M,alokasi_matakuliah(xx));
+    insertlast_matakuliah(M,alokasi_matakuliah(y));
+//    insertlast_matakuliah(M,alokasi_matakuliah(z));
+//    insertlast_matakuliah(M,alokasi_matakuliah(zz));
+do{
+    cout<<endl;
+    cout<<"pilih menu : "<<endl;
+    cout<<"1. input mahasiswa"<<endl;
+    cout<<"2. input matakuliah"<<endl;
+    cout<<"3. lihat data mahasiswa"<<endl;
+    cout<<"4. hapus data matakuliah "<<endl;
+    cout<<"5. daftar matakuliah yang di ambil"<<endl;
+    cout<<"6. hapus data matakuliah "<<endl;
+    cout<<"7. daftar matakuliah keseluruhan "<<endl;
+    cout<<"8. tambah data matakuliah baru "<<endl;
+    cout<<"0. keluar"<<endl;
+    cout<<"pilih : ";
+    cin>>choose;
+    if(choose==1){
+        cout<<"Nama Lengkap : ";
+        cin>>x.nama;
+        cout<<"NIM          : ";
+        cin>>x.nim;
+        cout<<"KELAS        : ";
+        cin>>x.kelas;
+        cout<<"JURUSAN      : ";
+        cin>>x.jurusan;
+        cout<<"ANGKATAN     : ";
+        cin>>x.angkatan;
+        insert_student(S,alokasi_student(x));
+    }else if(choose==2){
+        printinfo_matakuliah(M);
+        cout<<"Nama Mahasiswa : ";
+        cin>>x.nama;
+        cout<<"Kode Matakuliah Yang diambil : ";
+        cin>>m.id_matkul;
+        address_matakuliah mt = find_matkul(M, m.id_matkul);
+        input_relasi(find_student(S, x.nama), alokasi_relasi(mt));
+    }else if(choose==3){
+        printinfo_student(S);
+    }else if(choose == 4){
 
-    insertlast_matakuliah(L,p);
-    insertlast_matakuliah(L,q);
-    insertlast_matakuliah(L,r);
-    printinfo_matakuliah(L);
+    }else if(choose == 5){
+
+    }else if(choose == 6){
+        cout<<"Masukan Kode Mata Kuliah yang Ingin Dihapus : ";
+        cin>>m.id_matkul;
+        address_matakuliah mt = find_matkul(M,m.id_matkul);
+        delete_matakuliah(M,mt);
+    }else if(choose == 7){
+        printinfo_matakuliah(M);
+    }else if(choose == 8){
+
+    }
+}
+while(choose != 0);
+
+}
+
